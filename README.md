@@ -29,7 +29,7 @@ I have started to convert the CSS to SCSS so this might be a beginer friendly pl
 to start. 
 
 // DO NOT EDIT THE MAIN.CSS FILE DIRECTLY
-Run sass --watch public/css/main.scss public/css/main.css
+Run sass --watch public/scss:public/css
 
 The only thing I have commented out is the Sendgrid API so the email form
 won't work, other than that the website should be running on localhost:4000
