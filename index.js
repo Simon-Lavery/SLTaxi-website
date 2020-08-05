@@ -1,7 +1,8 @@
 "use strict";
 
 // Use dotenv to load enviroment variable for sendgrid
-require("dotenv").config();
+// I have commented this and the API key set function as they wont work without key
+// require("dotenv").config();
 
 const express = require("express"),
   compression = require("compression"),
@@ -14,7 +15,7 @@ const express = require("express"),
 
 
 const app = express();
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+// sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const sitemap = sm.createSitemap({
   hostname: "https://sltaxicatterick.co.uk",
