@@ -1,0 +1,691 @@
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Georgia, serif;
+  color: #111;
+  background-color: #eceff1;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+  color: #111;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.alert {
+  position: absolute;
+  top: 80px;
+  left: 5%;
+  width: 90%;
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+.alert__close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.alert_success {
+  background-color: #009944;
+  color: white;
+}
+.alert_error {
+  background-color: #cf000f;
+  color: white;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.about,
+.current-offers,
+.safe-taxi,
+.great-service,
+.airport-transfers,
+.station-transfers,
+.more-contact-info,
+.contact-page,
+.station-page,
+.airport-page {
+  border-top: 2px solid #f7b731;
+  padding: 0 0 20px;
+}
+
+.text-block {
+  margin: 50px auto 30px;
+  padding: 0;
+  width: 95%;
+}
+.text-block__h1, .text-block__h2, .text-block__h3 {
+  border-bottom: 2px solid #f7b731;
+  display: inline-block;
+  margin: 20px 0;
+}
+.text-block__h1 {
+  font-size: 1.5rem;
+}
+.text-block__h2 {
+  font-size: 1.3rem;
+}
+.text-block__h3 {
+  font-size: 1.2rem;
+}
+.text-block__h4 {
+  font-size: 1.1rem;
+}
+.text-block__p {
+  margin: 20px 0;
+  padding: 0 0 20px;
+}
+.text-block__p_bold {
+  font-weight: bold;
+}
+.text-block__ul {
+  padding: 0 20px;
+}
+.text-block__ul li {
+  margin: 10px 0 0 0;
+}
+
+.picture {
+  margin: 0 0 50px 0;
+  display: block;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  max-width: 100%;
+  margin: 0;
+  height: 70px;
+  padding: 10px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #eee;
+  border-bottom: 2px solid #f7b731;
+}
+.nav__logo {
+  width: 40%;
+}
+.nav__link {
+  display: inline-block;
+}
+.nav__img {
+  width: 100%;
+}
+.nav__menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow-y: hidden;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 70px;
+  left: 0;
+  transition: 0.5s;
+  background-color: #eceff1;
+}
+.nav__item {
+  margin: 20px 0;
+  padding: 4px 10px;
+}
+.nav__link {
+  font-weight: bold;
+  color: #333;
+}
+
+.hamburger {
+  outline: none;
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: #333;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active .hamburger__inner, .hamburger.is-active .hamburger__inner::before, .hamburger.is-active .hamburger__inner::after {
+  background-color: #333;
+}
+.hamburger__box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+.hamburger__inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger__inner, .hamburger__inner::before, .hamburger__inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: #333;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger__inner::before, .hamburger__inner::after {
+  content: "";
+  display: block;
+}
+.hamburger__inner::before {
+  top: -10px;
+}
+.hamburger__inner::after {
+  bottom: -10px;
+}
+.hamburger .hamburger__inner {
+  top: 2px;
+  transition: background-color 0s 0.13s linear;
+}
+.hamburger .hamburger__inner::before {
+  top: 10px;
+  transition: top 0.1s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger .hamburger__inner::after {
+  top: 20px;
+  transition: top 0.2s 0.2s cubic-bezier(0.33333, 0.66667, 0.66667, 1), transform 0.13s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger.is-active .hamburger__inner {
+  transition-delay: 0.22s;
+  background-color: transparent !important;
+}
+.hamburger.is-active .hamburger__inner::before {
+  top: 0;
+  transition: top 0.1s 0.15s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translate3d(0, 10px, 0) rotate(45deg);
+}
+.hamburger.is-active .hamburger__inner::after {
+  top: 0;
+  transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translate3d(0, 10px, 0) rotate(-45deg);
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: white;
+  background-color: rgba(0, 0, 255, 0.5);
+}
+.banner__icon {
+  margin: 0;
+  padding: 0 2.5%;
+}
+.banner__text {
+  flex-basis: 90%;
+  text-align: left;
+  font-size: 0.8rem;
+  margin: 10px auto;
+}
+.banner__close-button {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.banner__close-button button {
+  background: none;
+  color: white;
+  font-weight: bold;
+}
+
+.hero {
+  margin: 70px 0 0;
+  padding: 0;
+  height: 300px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.webp .hero_main {
+  background-image: url("/imgs/googlecover.webp");
+}
+.no-webp .hero_main {
+  background-image: url("/imgs/googlecover.jpg");
+}
+.webp .hero_station {
+  background-image: url("/imgs/stationhero.webp");
+}
+.no-webp .hero_station {
+  background-image: url("/imgs/stationhero.jpg");
+}
+.webp .hero_airport {
+  background-image: url("/imgs/airporthero.webp");
+}
+.no-webp .hero_airport {
+  background-image: url("/imgs/airporthero.jpg");
+}
+.webp .hero_blogs {
+  background-image: url("/imgs/bloghero.webp");
+}
+.no-webp .hero_blogs {
+  background-image: url("/imgs/bloghero.jpg");
+}
+.webp .hero_taxiguide {
+  background-image: url("/imgs/taxiguidehero.webp");
+}
+.no-webp .hero_taxiguide {
+  background-image: url("/imgs/taxiguidehero.jpg");
+}
+.webp .hero_daysout {
+  background-image: url("/imgs/daysouthero.webp");
+}
+.no-webp .hero_daysout {
+  background-image: url("/imgs/daysouthero.jpg");
+}
+
+.what-we-do {
+  margin: 50px auto 30px;
+  padding: 30px 0;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #546e7a;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.what-we-do__icon {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  text-align: center;
+}
+.what-we-do__icon i {
+  padding-bottom: 10px;
+}
+
+.current-offers {
+  background-color: #546e7a;
+  color: white;
+}
+
+.current-offers h2 {
+  color: white;
+}
+
+.offer {
+  margin: 50px auto 30px;
+  padding: 0;
+  background-color: white;
+  color: #333;
+  margin: 50px auto 30px;
+  width: 80%;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  height: 300px;
+}
+.offer__h3 {
+  height: 20%;
+  margin: 0;
+  padding: 20px 0;
+  color: #333;
+  border-radius: 10px 10px 0 0;
+  border-bottom: 2px solid #f7b731;
+  background-color: #eceff1;
+}
+.offer__text {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding: 50px 0 20px;
+}
+.offer__text p {
+  margin: 0 auto 20px;
+  width: 80%;
+  font-size: 0.9rem;
+}
+.offer__conditions {
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 10px;
+  width: 80%;
+}
+.offer__conditions span {
+  display: block;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+.safe-taxi {
+  background-color: #546e7a;
+  color: white;
+}
+
+.safe-taxi h2, .safe-taxi h3 {
+  color: white;
+}
+
+.call-button {
+  background-color: #f7b731;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: 2px 2px 3px #999;
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.travel-infographic {
+  background-color: #546e7a;
+  color: white;
+  padding: 30px 20px 20px;
+}
+.travel-infographic__icon {
+  color: #f7b731;
+  text-align: center;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 50%;
+  border: 2px solid #f7b731;
+}
+.travel-infographic__info {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+}
+.travel-infographic__h4 {
+  color: white;
+}
+.travel-infographic__ul {
+  margin: 20px 20px 0;
+  padding: 0;
+}
+.travel-infographic__ul li {
+  margin: 20px 0;
+}
+.travel-infographic a {
+  color: #f7b731;
+}
+
+.contact-page {
+  margin: 70px 0 0;
+  background-color: #546e7a;
+  color: white;
+}
+.contact-page h1, .contact-page h2 {
+  color: white;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  margin: 50px auto 30px;
+}
+.form__input {
+  margin: 10px 0;
+  padding: 10px;
+}
+.form__button {
+  background-color: #f7b731;
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.form__checker {
+  display: none;
+}
+
+.qa {
+  margin: 20px 0;
+}
+
+.qa p:nth-of-type(2) {
+  background-color: #fff;
+  padding: 10px;
+}
+
+.qa.hide-answer p:nth-of-type(2) {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+footer {
+  color: white;
+  background-color: #546e7a;
+  margin: 0;
+  padding: 10px 0 4px;
+}
+
+footer span {
+  display: block;
+  margin: 10px 0;
+}
+
+footer a {
+  color: #eee;
+}
+
+.media-icons {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 30px auto 0;
+}
+
+.copyright {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.copyright span {
+  margin: 0;
+  padding: 0;
+  font-size: 4vw;
+}
+
+@media only screen and (min-width: 790px) {
+  .call-button {
+    display: none;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .container .text-block {
+    order: -1;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav {
+    padding: 0 100px;
+  }
+  .nav__logo {
+    width: 8rem;
+  }
+  .nav__menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    background-color: transparent;
+    position: static;
+    height: 70px;
+    color: #333;
+  }
+  .nav__item {
+    margin: 0;
+    padding: 0 20px;
+  }
+  .nav__link:hover {
+    color: #f7b731;
+  }
+
+  .hero {
+    height: 400px;
+  }
+
+  .text-block {
+    margin: 0 10% 0 0;
+    padding: 0;
+    width: 50%;
+  }
+  .text-block__p {
+    margin: 10px 0;
+  }
+
+  .picture {
+    margin-top: 100px;
+    align-self: center;
+    width: 40%;
+  }
+
+  .about,
+.current-offers,
+.airport-transfers,
+.safe-taxi,
+.great-service,
+.station-transfers,
+.desktop-page,
+.contact-page,
+.FAQS {
+    padding: 50px 100px;
+  }
+
+  .what-we-do {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+  }
+
+  .current-offers {
+    margin: 0;
+  }
+  .current-offers .text-block {
+    width: 40%;
+  }
+
+  .offer {
+    margin: 0 20px;
+    width: 35%;
+  }
+  .offer__h3 {
+    padding: 20px;
+  }
+  .offer__text {
+    padding: 20px;
+  }
+
+  .desktop-page .text-block {
+    width: 70%;
+  }
+
+  .travel-infographic {
+    width: 50%;
+  }
+
+  footer {
+    padding: 50px 100px;
+    padding-bottom: 10px;
+  }
+
+  .media-icons {
+    justify-content: flex-start;
+    margin: 30px 0 20px;
+  }
+  .media-icons i {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .copyright {
+    margin-top: 20px;
+    text-align: left;
+  }
+
+  .copyright span {
+    font-size: 1rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
