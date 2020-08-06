@@ -13,7 +13,7 @@ const express = require("express"),
   sm = require("sitemap"),
   daysout = require("./public/js/daysout.js");
 
-
+const port = process.env.PORT || 4000;
 const app = express();
 // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
@@ -128,4 +128,4 @@ app.post("/contact", function (req, res) {
   res.redirect("/");
 });
 
-app.listen(4000, () => console.log("Server running on port 3000"));
+app.listen(port, () => console.log(`Server running on ${port}`));
