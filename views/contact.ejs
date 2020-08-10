@@ -22,31 +22,35 @@
   <%}%>
  <section class="contact-page">
    
-    <div class="text-block">
-      <h1 class="text-block__h1">Contact us</h1>
+    <div class="content">
+      <h1>Contact us</h1>
       <p>Please fill out the contact form and we will get back to you as soon as possible</p>
-    </div>
-     
-    <form class="form" action="/contact" method="POST">
-    <input class="form__input" type="text" name="name" placeholder="Name"/>
-    <input class="form__input" type="email" name="email" placeholder="Email address"/>
-    <textarea class="form__input" rows="10" name="messages" placeholder="Enter your message..."></textarea>
-    <input class="form__checker" value="" type="text" name="url" placeholder="url"/>
-    <button class="form__button" type="submit">Send</button>
-    </form>
     
-    <div class="text-block">
-      <h2 class="text-block__h2">Contact infomation</h2>
-      <p class="text-block__p">Tel: <a href="tel:01748883370">01748 883370</a></p>
-      <p class="text-block__p">Email: <a href="mailto:sltaxicatterick@gmail.com">sltaxicatterick@gmail.com</a></p>
+      <div class="content__section">
+        <form class="form" action="/contact" method="POST">
+          <input class="form__input" type="text" name="name" placeholder="Name"/>
+          <input class="form__input" type="email" name="email" placeholder="Email address"/>
+          <textarea class="form__input" rows="10" name="messages" placeholder="Enter your message..."></textarea>
+          <input class="form__checker" value="" type="text" name="url" placeholder="url"/>
+          <button class="form__button" type="submit">Send</button>
+          </form>
+        </div>
+     
+    
+    
+    <div class="content__section">
+      <h2>Contact infomation</h2>
+      <p>Tel: <a href="tel:01748883370">01748 883370</a></p>
+      <p>Email: <a href="mailto:sltaxicatterick@gmail.com">sltaxicatterick@gmail.com</a></p>
     </div>
+  </div>
   </section>
 
     
 
     
  <section class="FAQS">
-  <div class="text-block">
+  <div class="content">
     <h2 class="text-block__h2">FAQ's</h2>
      
     <div class="qa hide-answer">
@@ -60,16 +64,26 @@
      </div>
     
     <div class="qa hide-answer">
-       <p class="text-block__p">Q: Can I book a taxi from Darlington to Catterick ? </p><i class="fas fa-chevron-down"></i>
+       <p class="text-block__p">Q: Can I book a taxi from Darlington back to Catterick ? </p><i class="fas fa-chevron-down"></i>
        <p class="text-block__p">A:Yes, we can collect from Darlington for the same price, we would normally need to take a deposit on a card for this.</p>
     </div>
        
     <div class="qa hide-answer">
-       <p class="text-block__p">Q: Does SLTaxi do airport transfers ? </p><i class="fas fa-chevron-down"></i>
+       <p class="text-block__p">Q: Do we provide Airport transfers ? </p><i class="fas fa-chevron-down"></i>
   
        <p class="text-block__p">A: Yes, we can take you from Catterick to any UK airport. We are confident we can beat any local price so why not give us a call.</p>
     </div>
-   </div>
+
+    <div class="home-page-link">
+      <div class="content__section">
+        <a href="/"><i class="fas fa-arrow-circle-left"></i> Back to homepage</a>
+      </div>
+    </div>
+
+  </div>
+
+  
+    
  </section>
 
  <script type="application/ld+json">
@@ -106,12 +120,5 @@
     }}]
   }
 </script>
-
- 
-	
- <div class="homepage">
-  <a href="/"><i class="fas fa-arrow-circle-left"></i> Back to homepage</a>
- </div>
-
     
 <% include ./partials/footer %>

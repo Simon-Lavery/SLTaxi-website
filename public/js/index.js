@@ -2,7 +2,7 @@
 
 window.onload = () => {
   const menuButton = document.getElementById("menuButton");
-  const menu = document.getElementById("menu");
+  const nav = document.getElementById("nav");
   const qa = document.getElementsByClassName("qa");
   const callButton = document.getElementsByClassName("call-button")[0];
   let menuOpen = false;
@@ -10,9 +10,9 @@ window.onload = () => {
   menuButton.addEventListener("click", function () {
     this.classList.toggle("is-active");
     if (!menuOpen) {
-      menu.style.height = "300px";
+      nav.style.height = "300px";
     } else {
-      menu.style.height = 0;
+      nav.style.height = 0;
     }
     menuOpen = !menuOpen;
   });
@@ -27,13 +27,15 @@ window.onload = () => {
   window.addEventListener("scroll", () => {
     if (menuOpen) {
       menuButton.classList.toggle("is-active");
-      menu.style.height = 0;
+      nav.style.height = 0;
       menuOpen = false;
     }
-    let banner = document.getElementsByClassName('banner')[0];
-    if (banner) {
-      banner.style.display = 'none';
-    }
+
+    // Remove banner on scroll
+    // let banner = document.getElementsByClassName('banner')[0];
+    // if (banner) {
+    //   banner.style.display = 'none';
+    // }
   });
 
   setTimeout(() => {

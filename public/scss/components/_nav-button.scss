@@ -94,4 +94,9 @@
       transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
     transform: translate3d(0, 10px, 0) rotate(-45deg);
   }
+
+  @media #{$break-m}{
+    display: none;
+  }
 }
+

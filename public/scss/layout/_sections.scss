@@ -1,0 +1,289 @@
+
+// inline div to group text
+.text-block{
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+// sets img to 100% width absolute position on mobile and back to flex row on desktop
+%picture-row{
+  position: relative;
+  margin: 0;
+  // push the content down the height of the image
+  padding: 200px 0 0;
+  
+  @media #{$break-m}{
+    padding: 0;
+
+    .text-block{
+      width: 50%;
+    }
+  }
+}
+
+// hero styles
+
+.hero{
+  margin: 70px 0 0;
+  padding: 0;
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @each $image, $url in $hero-images{
+    .webp &--#{$image} {
+      background-image: url("#{$url}.webp");
+    }
+  
+    .no-webp &--#{$image} {
+      background-image: url("#{$url}.jpg");
+    }
+  } 
+
+  @media #{$break-m}{
+    height: 400px;
+    background-size: 100%;
+  }
+}
+
+// about styles
+
+.about{
+  @media #{$break-m}{
+    .text-block{
+      width: 50%;
+    }
+  }
+}
+
+// current offer styles
+
+.current-offers{
+  @extend %theme-teal;
+  margin: 0;
+  padding: 1px;
+
+  @media #{$break-m}{
+    .text-block{
+      margin: 0;
+      width: 30%;
+    }
+  }
+}
+
+// airport transfers styles
+
+.airport-transfers{
+  @extend %picture-row;
+}
+
+// safe taxi styles
+
+.safe-taxi{
+  @extend %picture-row;
+  @extend %theme-teal;
+  @media #{$break-m}{
+    .switch{
+      order: -1;
+      width: 40%;
+    }
+    .picture{
+      width: 50%;
+    }
+  }
+  
+  ul{
+    padding: 0 0 0 20px;
+  }
+}
+
+.great-service{
+  @extend %picture-row;
+}
+
+// station styles
+
+.station-transfers{
+  @extend %picture-row;
+}
+
+// Contact page sections
+
+// contact page
+
+.contact-page{
+  @extend %theme-teal;
+}
+
+.form{
+  display: flex;
+  flex-direction: column;
+  
+  &__input{
+    margin: 10px 0;
+    padding: 10px;
+  }
+  &__button{
+    background-color: #f7b731;
+    margin: 20px 0;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  &__checker{
+    display: none;
+  }
+}
+
+
+.qa{
+  margin: 20px 0;
+}
+.qa p:nth-of-type(2){
+  background-color: $primary-light;
+  padding: 10px;
+}
+.qa.hide-answer p:nth-of-type(2){
+  height: 0;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+}
+
+// blog pages styles
+
+// DAYS OUT STYLES
+.dayout{
+  h2{
+    margin: 20px 0 0;
+  }
+}
+.subtitle{
+  display: inline-block;
+  
+  color: lighten($grey, 10%);
+  font-size: 1.3rem;
+}
+
+.travel-infographic{
+  @extend %theme-teal;
+  color: $primary-light;
+  padding: 20px 20px 40px;
+  display: flex;
+  flex-direction: column;
+
+  &__info{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0;
+    .icon{
+      i{
+        width: 30px;
+        color: $taxi-yellow;
+        display: inline-block;
+        font-size: 1rem;
+        margin: 0 10px 0 0;
+      }
+    }
+    
+    span{
+      font-size: .9rem;
+      display: inline-block;
+    }
+  
+  }
+    
+}
+
+.taxi-guide{
+  ul{
+    li{
+      margin: 0 0 20px;
+    }
+  }
+}
+// footer styles
+
+footer{
+  @extend %theme-teal;
+  margin: 0;
+  padding: 120px 0 0;
+  position: relative;
+  .content{
+    padding: 0 0 10px;
+  }
+  .media-icons{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: lighten($primary-dark, 10%);
+    
+    a{
+      padding: 10px;
+      border-top: 2px solid $taxi-yellow;
+      border-bottom: 2px solid $taxi-yellow;
+      box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+      color: $primary-light;
+      font-size: 0.7rem;
+    }
+    
+    @media #{$break-m}{
+      height: auto;
+      width: 40%;
+      left: auto;
+      right: 0;
+      top: auto;
+      bottom: 0;
+    
+      a{
+        width: 20%;
+        text-align: center;
+        i{
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .text-block{
+    span{
+      margin: 5px 0;
+    }
+    @media #{$break-m}{
+    
+    }
+  }
+  .privacy{
+    margin: 30px 0 20px;
+    a{
+      display: inline-block;
+      width: 100%;
+      margin: 0;
+    }
+  }
+ 
+  .copyright{
+    font-size: .9rem;
+  }
+  .copy{
+    display: block;
+  }
+
+  @media #{$break-m}{
+    padding: 60px 0 10px;
+    .copy{
+      margin: 0 20px 0 0;
+      display: inline-block;
+    }
+  }
+}

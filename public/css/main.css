@@ -337,6 +337,91 @@ template {
   display: none;
 }
 
+footer, .travel-infographic, .contact-page, .safe-taxi, .current-offers {
+  color: #eceff1;
+  background-color: #546e7a;
+}
+footer h1, .travel-infographic h1, .contact-page h1, .safe-taxi h1, .current-offers h1,
+footer h2,
+.travel-infographic h2,
+.contact-page h2,
+.safe-taxi h2,
+.current-offers h2,
+footer h3,
+.travel-infographic h3,
+.contact-page h3,
+.safe-taxi h3,
+.current-offers h3 {
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html,
+body {
+  margin: 0;
+  max-width: 100%;
+  padding: 0;
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: Georgia, serif;
+  color: #444;
+  background-color: #eceff1;
+}
+
+h1,
+h2,
+h3 {
+  margin: 1px;
+  padding: 0;
+}
+
+h1 {
+  font-size: 1.7rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  margin: 20px 0 0;
+}
+
+p {
+  margin-top: 15px;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: inherit;
+}
+
+a:visited {
+  color: inherit;
+}
+
+hr {
+  border: none;
+  border-bottom: 10px dotted rgba(68, 68, 68, 0.3);
+  width: 20%;
+}
+
+@media (min-width: 768px) {
+  .mobile-line-break {
+    display: none;
+  }
+}
+
 .hamburger {
   outline: none;
   padding: 15px 15px;
@@ -346,7 +431,7 @@ template {
   transition-duration: 0.15s;
   transition-timing-function: linear;
   font: inherit;
-  color: #333;
+  color: #444;
   text-transform: none;
   background-color: transparent;
   border: 0;
@@ -360,7 +445,7 @@ template {
   opacity: 0.7;
 }
 .hamburger.is-active .hamburger__inner, .hamburger.is-active .hamburger__inner::before, .hamburger.is-active .hamburger__inner::after {
-  background-color: #333;
+  background-color: #444;
 }
 .hamburger__box {
   width: 40px;
@@ -376,7 +461,7 @@ template {
 .hamburger__inner, .hamburger__inner::before, .hamburger__inner::after {
   width: 40px;
   height: 4px;
-  background-color: #333;
+  background-color: #444;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -419,162 +504,219 @@ template {
   transition: top 0.2s cubic-bezier(0.33333, 0, 0.66667, 0.33333), transform 0.13s 0.22s cubic-bezier(0.215, 0.61, 0.355, 1);
   transform: translate3d(0, 10px, 0) rotate(-45deg);
 }
-
-* {
-  box-sizing: border-box;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
 }
 
-html,
-body {
+.banner {
   margin: 0;
-  max-width: 100%;
-  padding: 0;
-  font-size: 18px;
-  line-height: 1.4;
-  font-family: Georgia, serif;
-  color: #111;
-  background-color: #eceff1;
+  padding: 10px 0;
+  width: 100%;
+  color: #eceff1;
+  background-color: rgba(0, 0, 255, 0.7);
 }
-
-h1,
-h2,
-h3,
-h4 {
-  margin: 0;
-  padding: 0;
-  color: #111;
-}
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-  font-weight: bold;
-  color: inherit;
-}
-
-a:visited {
-  color: inherit;
-}
-
-p {
-  margin: 0;
+.banner .content {
   padding: 0;
 }
+.banner i {
+  flex: 1;
+  margin: 1px;
+  padding: 0;
+}
+.banner p {
+  flex: 9;
+  text-align: center;
+  font-size: 0.8rem;
+  margin: 1px;
+  padding: 0;
+}
+.banner p a {
+  color: #f7b731;
+}
+.banner .content {
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .banner {
+    padding: 5px;
+  }
+  .banner p {
+    text-align: left;
+  }
+  .banner i {
+    margin: 0 1rem 0 10rem;
+    text-align: right;
+    font-size: 1.5rem;
+  }
+}
 
-.alert {
+.close-button {
   position: absolute;
-  top: 80px;
-  left: 5%;
-  width: 90%;
-  padding: 30px 20px;
-  border-radius: 10px;
-}
-.alert__close-button {
-  position: absolute;
+  width: 10%;
   top: 5px;
   right: 5px;
-}
-.alert_success {
-  background-color: #009944;
-  color: #fff;
-}
-.alert_error {
-  background-color: #cf000f;
-  color: #fff;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: white;
 }
 
-.container {
+.what-we-do {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0 0;
+  padding: 1px;
+  width: 100%;
+}
+.what-we-do__icon {
+  width: 70%;
+  text-align: center;
+  margin: 0;
+}
+.what-we-do__icon i {
+  font-size: 2rem;
+}
+.what-we-do__icon p {
+  margin: 20px 0 30px;
+  padding: 0;
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .what-we-do {
+    width: 40%;
+    margin: 0;
+  }
+  .what-we-do__icon {
+    margin: 0 auto;
+  }
+}
+
+.offer {
+  margin: 50px 0 0;
+  width: 100%;
+  color: #444;
+  background-color: #eceff1;
+  padding: 0;
+  opacity: 0.9;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.offer__title {
+  background-color: #4f9d66;
+  margin: 0;
+  padding: 10px;
+  color: #eceff1;
+  border-radius: 10px 10px 0 0;
+}
+.offer__title h3 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+.offer__text {
+  padding: 30px 10px;
+  margin: 0;
+}
+.offer__conditions {
+  padding: 10px;
+  color: #5e5e5e;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+.offer__conditions span {
+  display: block;
+}
+@media (min-width: 768px) {
+  .offer {
+    margin: 0;
+    width: 30%;
+  }
+  .offer__text {
+    padding: 40px 10px;
+  }
+}
+
+.home-page-link .content {
+  margin-bottom: 20px;
+}
+
+.call-button {
+  background-color: #f7b731;
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
+  margin: 0;
+  padding: 0;
+  z-index: 10;
+}
+.call-button a i {
+  font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .call-button {
+    display: none;
+  }
+}
+
+.navbar {
+  background: #eee;
+  border-bottom: 2px solid #f7b731;
+  position: fixed;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  height: 70px;
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  position: fixed;
+  z-index: 1;
+}
+.navbar .content {
+  margin: 0 auto;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .navbar {
+    height: 80px;
+    padding: 20px 0;
+  }
+}
+
+nav + div, nav + section {
+  margin-top: 70px;
+}
+@media (min-width: 768px) {
+  nav + div, nav + section {
+    margin-top: 80px;
+  }
+}
+
+.nav-logo {
+  align-self: center;
+  display: inline-block;
+  height: 2rem;
   margin: 0;
   padding: 0;
 }
-
-.about,
-.current-offers,
-.safe-taxi,
-.great-service,
-.airport-transfers,
-.station-transfers,
-.more-contact-info,
-.contact-page,
-.station-page,
-.airport-page {
-  border-top: 2px solid #f7b731;
-  padding: 0 0 20px;
-}
-
-.text-block {
-  margin: 50px auto 30px;
-  padding: 0;
-  width: 95%;
-}
-.text-block__h1, .text-block__h2, .text-block__h3 {
-  border-bottom: 2px solid #f7b731;
-  display: inline-block;
-  margin: 20px 0;
-}
-.text-block__h1 {
-  font-size: 1.5rem;
-}
-.text-block__h2 {
-  font-size: 1.3rem;
-}
-.text-block__h3 {
-  font-size: 1.2rem;
-}
-.text-block__h4 {
-  font-size: 1.1rem;
-}
-.text-block__p {
-  margin: 20px 0;
-  padding: 0 0 20px;
-}
-.text-block__p_bold {
-  font-weight: bold;
-}
-.text-block__ul {
-  padding: 0 20px;
-}
-.text-block__ul li {
-  margin: 10px 0 0 0;
-}
-
-.picture {
-  margin: 0 0 50px 0;
-  display: block;
-  width: 100%;
+.nav-logo img {
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  max-width: 100%;
-  margin: 0;
-  height: 70px;
-  padding: 10px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #eee;
-  border-bottom: 2px solid #f7b731;
-}
-.nav__logo {
-  width: 40%;
-}
-.nav__link {
-  display: inline-block;
-}
-.nav__img {
-  width: 100%;
-}
-.nav__menu {
+  color: #444;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -593,241 +735,200 @@ p {
 }
 .nav__link {
   font-weight: bold;
-  color: #333;
+  color: #444;
+}
+@media (min-width: 768px) {
+  .nav {
+    position: static;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex: 1;
+    background-color: transparent;
+    height: auto;
+  }
+  .nav__item {
+    margin: 0;
+    padding: 0 20px;
+  }
+  .nav__link:hover {
+    color: #f7b731;
+  }
 }
 
-.banner {
+.content {
+  margin: 0 auto;
+  padding: 50px 0;
+  width: 95%;
+}
+.content__section {
+  margin: 50px 0 0;
+  padding: 0;
+}
+@media (min-width: 768px) {
+  .content {
+    padding: 80px 0;
+    width: 80%;
+  }
+}
+
+.flex-row {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 1px;
+  padding: 0;
+}
+.flex-row .picture {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 200px;
+  width: 100%;
+  max-width: 100%;
   margin: 0;
   padding: 0;
-  width: 100%;
-  color: #fff;
-  background-color: rgba(0, 0, 255, 0.5);
+  overflow: hidden;
 }
-.banner__icon {
-  margin: 0;
-  padding: 0 2.5%;
+@media (min-width: 768px) {
+  .flex-row .picture {
+    height: auto;
+    position: static;
+    width: 40%;
+    margin: 10px 0 0;
+  }
 }
-.banner__text {
-  flex-basis: 90%;
-  text-align: left;
-  font-size: 0.8rem;
-  margin: 10px auto;
+
+.alert {
+  position: absolute;
+  top: 80px;
+  left: 5%;
+  width: 90%;
+  padding: 30px 20px;
+  border-radius: 10px;
 }
-.banner__close-button {
+.alert__close-button {
   position: absolute;
   top: 5px;
   right: 5px;
 }
-.banner__close-button button {
-  background: none;
-  color: #fff;
-  font-weight: bold;
+.alert_success {
+  background-color: #009944;
+  color: #eceff1;
+}
+.alert_error {
+  background-color: #cf000f;
+  color: #eceff1;
+}
+
+.text-block {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+}
+
+.station-transfers, .great-service, .safe-taxi, .airport-transfers {
+  position: relative;
+  margin: 0;
+  padding: 200px 0 0;
+}
+@media (min-width: 768px) {
+  .station-transfers, .great-service, .safe-taxi, .airport-transfers {
+    padding: 0;
+  }
+  .station-transfers .text-block, .great-service .text-block, .safe-taxi .text-block, .airport-transfers .text-block {
+    width: 50%;
+  }
 }
 
 .hero {
   margin: 70px 0 0;
   padding: 0;
-  height: 300px;
+  height: 200px;
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.webp .hero_main {
+.webp .hero--main {
   background-image: url("/imgs/googlecover.webp");
 }
-.no-webp .hero_main {
+.no-webp .hero--main {
   background-image: url("/imgs/googlecover.jpg");
 }
-.webp .hero_station {
+.webp .hero--station {
   background-image: url("/imgs/stationhero.webp");
 }
-.no-webp .hero_station {
+.no-webp .hero--station {
   background-image: url("/imgs/stationhero.jpg");
 }
-.webp .hero_airport {
+.webp .hero--airport {
   background-image: url("/imgs/airporthero.webp");
 }
-.no-webp .hero_airport {
+.no-webp .hero--airport {
   background-image: url("/imgs/airporthero.jpg");
 }
-.webp .hero_blogs {
+.webp .hero--blogs {
   background-image: url("/imgs/bloghero.webp");
 }
-.no-webp .hero_blogs {
+.no-webp .hero--blogs {
   background-image: url("/imgs/bloghero.jpg");
 }
-.webp .hero_taxiguide {
+.webp .hero--taxiguide {
   background-image: url("/imgs/taxiguidehero.webp");
 }
-.no-webp .hero_taxiguide {
+.no-webp .hero--taxiguide {
   background-image: url("/imgs/taxiguidehero.jpg");
 }
-.webp .hero_daysout {
+.webp .hero--daysout {
   background-image: url("/imgs/daysouthero.webp");
 }
-.no-webp .hero_daysout {
+.no-webp .hero--daysout {
   background-image: url("/imgs/daysouthero.jpg");
 }
+@media (min-width: 768px) {
+  .hero {
+    height: 400px;
+    background-size: 100%;
+  }
+}
 
-.what-we-do {
-  margin: 50px auto 30px;
-  padding: 30px 0;
-  width: 95%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border: 1px solid #546e7a;
-  border-radius: 10px;
-  background-color: #fff;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-}
-.what-we-do__icon {
-  width: 80%;
-  display: flex;
-  flex-direction: column;
-  margin: 10px auto;
-  text-align: center;
-}
-.what-we-do__icon i {
-  padding-bottom: 10px;
+@media (min-width: 768px) {
+  .about .text-block {
+    width: 50%;
+  }
 }
 
 .current-offers {
-  background-color: #546e7a;
-  color: #fff;
-}
-
-.current-offers h2 {
-  color: #fff;
-}
-
-.offer {
-  margin: 50px auto 30px;
-  padding: 0;
-  background-color: #fff;
-  color: #333;
-  margin: 50px auto 30px;
-  width: 80%;
-  text-align: center;
-  border-radius: 10px;
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-  height: 300px;
-}
-.offer__h3 {
-  height: 20%;
   margin: 0;
-  padding: 20px 0;
-  color: #333;
-  border-radius: 10px 10px 0 0;
-  border-bottom: 2px solid #f7b731;
-  background-color: #eceff1;
+  padding: 1px;
 }
-.offer__text {
-  height: 80%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 0;
-  padding: 50px 0 20px;
-}
-.offer__text p {
-  margin: 0 auto 20px;
-  width: 80%;
-  font-size: 0.9rem;
-}
-.offer__conditions {
-  margin: 0 auto;
-  padding: 0;
-  padding-top: 10px;
-  width: 80%;
-}
-.offer__conditions span {
-  display: block;
-  font-weight: bold;
-  font-size: 0.7rem;
+@media (min-width: 768px) {
+  .current-offers .text-block {
+    margin: 0;
+    width: 30%;
+  }
 }
 
-.safe-taxi {
-  background-color: #546e7a;
-  color: #fff;
+@media (min-width: 768px) {
+  .safe-taxi .switch {
+    order: -1;
+    width: 40%;
+  }
+  .safe-taxi .picture {
+    width: 50%;
+  }
 }
-
-.safe-taxi h2, .safe-taxi h3 {
-  color: #fff;
-}
-
-.call-button {
-  background-color: #f7b731;
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  box-shadow: 2px 2px 3px #999;
-  border-radius: 50%;
-  height: 60px;
-  width: 60px;
-  margin: 0;
-  padding: 0;
-}
-
-.travel-infographic {
-  background-color: #546e7a;
-  color: #fff;
-  padding: 30px 20px 20px;
-}
-.travel-infographic__icon {
-  color: #f7b731;
-  text-align: center;
-  height: 3rem;
-  width: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10px auto;
-  padding: 10px;
-  border-radius: 50%;
-  border: 2px solid #f7b731;
-}
-.travel-infographic__info {
-  text-align: center;
-  font-size: 0.9rem;
-  margin-bottom: 30px;
-}
-.travel-infographic__h4 {
-  color: #fff;
-}
-.travel-infographic__ul {
-  margin: 20px 20px 0;
-  padding: 0;
-}
-.travel-infographic__ul li {
-  margin: 20px 0;
-}
-.travel-infographic a {
-  color: #f7b731;
-}
-
-.contact-page {
-  margin: 70px 0 0;
-  background-color: #546e7a;
-  color: #fff;
-}
-.contact-page h1, .contact-page h2 {
-  color: #fff;
+.safe-taxi ul {
+  padding: 0 0 0 20px;
 }
 
 .form {
   display: flex;
   flex-direction: column;
-  width: 95%;
-  margin: 50px auto 30px;
 }
 .form__input {
   margin: 10px 0;
@@ -849,7 +950,7 @@ p {
 }
 
 .qa p:nth-of-type(2) {
-  background-color: #fff;
+  background-color: #eceff1;
   padding: 10px;
 }
 
@@ -860,170 +961,112 @@ p {
   overflow-y: hidden;
 }
 
-footer {
-  color: #fff;
-  background-color: #546e7a;
-  margin: 0;
-  padding: 10px 0 4px;
+.dayout h2 {
+  margin: 20px 0 0;
 }
 
-footer span {
-  display: block;
-  margin: 10px 0;
+.subtitle {
+  display: inline-block;
+  color: #5e5e5e;
+  font-size: 1.3rem;
 }
 
-footer a {
-  color: #eee;
-}
-
-.media-icons {
+.travel-infographic {
+  color: #eceff1;
+  padding: 20px 20px 40px;
   display: flex;
-  justify-content: space-between;
-  width: 80%;
-  margin: 30px auto 0;
+  flex-direction: column;
+}
+.travel-infographic__info {
+  display: flex;
+  align-items: center;
+  margin: 20px 0 0;
+}
+.travel-infographic__info .icon i {
+  width: 30px;
+  color: #f7b731;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 0 10px 0 0;
+}
+.travel-infographic__info span {
+  font-size: 0.9rem;
+  display: inline-block;
 }
 
-.copyright {
+.taxi-guide ul li {
+  margin: 0 0 20px;
+}
+
+footer {
   margin: 0;
-  padding: 0;
-  text-align: center;
+  padding: 120px 0 0;
+  position: relative;
 }
-
-.copyright span {
+footer .content {
+  padding: 0 0 10px;
+}
+footer .media-icons {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+  background-color: #698998;
+}
+footer .media-icons a {
+  padding: 10px;
+  border-top: 2px solid #f7b731;
+  border-bottom: 2px solid #f7b731;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  color: #eceff1;
+  font-size: 0.7rem;
+}
+@media (min-width: 768px) {
+  footer .media-icons {
+    height: auto;
+    width: 40%;
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+  }
+  footer .media-icons a {
+    width: 20%;
+    text-align: center;
+  }
+  footer .media-icons a i {
+    font-size: 1.2rem;
+  }
+}
+footer .text-block span {
+  margin: 5px 0;
+}
+footer .privacy {
+  margin: 30px 0 20px;
+}
+footer .privacy a {
+  display: inline-block;
+  width: 100%;
   margin: 0;
-  padding: 0;
-  font-size: 4vw;
 }
-
-@media only screen and (min-width: 790px) {
-  .call-button {
-    display: none;
-  }
-
-  .container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .container .text-block {
-    order: -1;
-  }
-
-  .hamburger {
-    display: none;
-  }
-
-  .nav {
-    padding: 0 100px;
-  }
-  .nav__logo {
-    width: 8rem;
-  }
-  .nav__menu {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex: 1;
-    background-color: transparent;
-    position: static;
-    height: 70px;
-    color: #333;
-  }
-  .nav__item {
-    margin: 0;
-    padding: 0 20px;
-  }
-  .nav__link:hover {
-    color: #f7b731;
-  }
-
-  .hero {
-    height: 400px;
-  }
-
-  .text-block {
-    margin: 0 10% 0 0;
-    padding: 0;
-    width: 50%;
-  }
-  .text-block__p {
-    margin: 10px 0;
-  }
-
-  .picture {
-    margin-top: 100px;
-    align-self: center;
-    width: 40%;
-  }
-
-  .about,
-.current-offers,
-.airport-transfers,
-.safe-taxi,
-.great-service,
-.station-transfers,
-.desktop-page,
-.contact-page,
-.FAQS {
-    padding: 50px 100px;
-  }
-
-  .what-we-do {
-    margin: 0;
-    padding: 0;
-    width: 40%;
-  }
-
-  .current-offers {
-    margin: 0;
-  }
-  .current-offers .text-block {
-    width: 40%;
-  }
-
-  .offer {
-    margin: 0 20px;
-    width: 35%;
-  }
-  .offer__h3 {
-    padding: 20px;
-  }
-  .offer__text {
-    padding: 20px;
-  }
-
-  .desktop-page .text-block {
-    width: 70%;
-  }
-
-  .travel-infographic {
-    width: 50%;
-  }
-
+footer .copyright {
+  font-size: 0.9rem;
+}
+footer .copy {
+  display: block;
+}
+@media (min-width: 768px) {
   footer {
-    padding: 50px 100px;
-    padding-bottom: 10px;
+    padding: 60px 0 10px;
   }
-
-  .media-icons {
-    justify-content: flex-start;
-    margin: 30px 0 20px;
-  }
-  .media-icons i {
+  footer .copy {
+    margin: 0 20px 0 0;
     display: inline-block;
-    margin-right: 20px;
-  }
-
-  .copyright {
-    margin-top: 20px;
-    text-align: left;
-  }
-
-  .copyright span {
-    font-size: 1rem;
   }
 }
 

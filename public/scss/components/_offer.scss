@@ -1,0 +1,45 @@
+.offer{
+  margin: 50px 0 0;
+  width: 100%;
+  color: $grey;
+  background-color: $primary-light;
+  padding: 0;
+  opacity: 0.9;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+
+  &__title{
+    background-color: #4f9d66;
+    margin: 0;
+    padding: 10px;
+    color: $primary-light;
+    border-radius: 10px 10px 0 0;
+    h3{
+      margin: 0;
+      font-size: 1.5rem;
+    }
+  }
+  &__text{
+    padding:30px 10px;
+    margin: 0;
+  }
+  &__conditions{
+    padding: 10px;
+    color: lighten($grey, 10%);
+    font-size: 0.7rem;
+    font-weight: bold;
+
+    span{
+      display: block;
+    }
+  }
+
+  @media #{$break-m}{
+    &__text{
+      padding: 40px 10px;
+    }
+    margin: 0;
+    width: 30%;
+  }
+}

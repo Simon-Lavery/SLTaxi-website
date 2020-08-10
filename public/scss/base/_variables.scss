@@ -1,14 +1,43 @@
 // Colors descriptive
 
-$grey: #333;
+$grey: #444;
 $taxi-yellow: #f7b731;
-$white: #fff;
 $primary-light: #eceff1;
 $primary: #819ca9;
 $primary-dark: #546e7a;
 
+// content padding for different sections
+$content-padding--mobile: 50px;
+$content-padding--desktop: 80px;
 
-$block-margin: 50px auto 30px;
-$block-width: 95%;
-$section-padding: 0 0 20px;
-$mobile-breakpoint: 790px;
+
+// content width
+$content-width--mobile: 95%;
+$content-width--desktop: 80%;
+
+// breakpoints
+
+$break-m: "(min-width: 768px)";
+
+// maps
+
+$hero-images: (
+    "main": "/imgs/googlecover",
+    "station": "/imgs/stationhero",
+    "airport": "/imgs/airporthero",
+    "blogs": "/imgs/bloghero",
+    "taxiguide": "/imgs/taxiguidehero",
+    "daysout": "/imgs/daysouthero",
+);
+
+// themes
+
+%theme-teal{
+    color: $primary-light;
+    background-color: $primary-dark;
+    h1,
+    h2,
+    h3{
+        color: lighten($primary-light, 10%);
+    }
+}

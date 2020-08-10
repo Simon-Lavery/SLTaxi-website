@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>
-    SLTaxi - Reliable taxi service in Catterick garrison 01748 883370
+    Taxi service - Catterick Garrison | SLTaxi - 01748 883370
   </title>
   <link rel="shortcut icon" href="/favicon.ico" />
   <meta name="description"
@@ -20,20 +20,9 @@
   <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
   <% include ./partials/header %>
 
-  <div class="hero hero_main">
-    <div class="banner">
-      <div class="banner__icon">
-        <i class="fas fa-2x fa-info-circle"></i>
-      </div>
+  <div class="hero hero--main">
 
-      <div class="banner__close-button">
-        <button onclick="closeBanner()">X</button>
-      </div>
-      <p class="banner__text">
-        Please note we currently have extra measures in place to keep passengers safe from coronavirus <a
-          href="#safe-taxi">learn more</a>
-      </p>
-    </div>
+
     <div>
       <% if(success && success.length > 0) {%>
       <div class="alert alert_success">
@@ -47,189 +36,244 @@
   </div>
   <!-- hero -->
 
-  <section class="about">
-    <div class="container">
-      <div class="text-block">
-        <h1 class="text-block__h1">A professional, reliable taxi service</h1>
-        <p class="text-block__p">
-          SLTaxi is a professional, independent taxi service in Catterick
-          garrison. Providing taxis for airport transfers, station transfers,
-          business travel, nights out, shopping trips, long and short distance
-          fares. If you're looking for a consistently reliable service, clean
-          car and unbeatable prices you have come to the right place.
-        </p>
-        <p>
-          Taxi service available in Catterick garrison, Scotton, Colburn area.
-          We pride ourselves on exceptional service and going the extra mile
-          for our customers. Our taxi is maintained to the highest standards
-          and we are fully licensed and DBS checked. So why not book with
-          SLTaxi today and see for yourself.
-        </p>
-      </div>
+  <section class="banner">
+    <div class="content">
 
-      <div class="what-we-do">
-        <div class="what-we-do__icon">
-          <i class="far fa-credit-card"></i>
+      <div class="flex-row">
+        <i class="fas fa-2x fa-info-circle"></i>
+        <!-- <button class="close-button" onclick="closeBanner()">X</button> -->
+        <p>
+          We have extra measures in place to keep passengers safe <a href="#safe-taxi">learn more</a>
+        </p>
+    
+      </div>
+        
+    </div>
+  </section>
+
+  <section class="about">
+    <div class="content">
+      <div class="flex-row">
+        <div class="text-block">
+          <h1>A professional <br class="mobile-line-break">reliable taxi service</h1>
           <p>
-            All major credit cards and Contactless payments accepted
+            We are Professional, Independent taxi service in Catterick
+            garrison, providing taxis for airport transfers, station transfers,
+            business travel, nights out, shopping trips, long and short distance
+            fares. If you're looking for a consistently reliable service, clean
+            car and unbeatable prices you have come to the right place.
+          </p>
+          <p>
+            We provide taxis in the Catterick garrison, Scotton, Colburn area
+            and pride ourselves on exceptional service and going the extra mile
+            for our customers. Our taxis are maintained to the highest standards
+            and we are fully licensed and DBS checked. So why not book with
+            us today and see for yourself.
           </p>
         </div>
-        <div class="what-we-do__icon">
-          <i class="fas fa-wifi"></i>
-          <p>Free superfast 4G customer wifi</p>
-        </div>
-        <div class="what-we-do__icon">
-          <i class="fas fa-mobile-alt"></i>
-          <p>Phone charging facilities</p>
+  
+        <div class="what-we-do">
+          <div class="what-we-do__icon">
+            <i class="far fa-credit-card"></i>
+            <p>
+              All major credit cards and Contactless payments accepted
+            </p>
+          </div>
+          <div class="what-we-do__icon">
+            <i class="fas fa-wifi"></i>
+            <p>Free superfast 4G customer wifi</p>
+          </div>
+          <div class="what-we-do__icon">
+            <i class="fas fa-mobile-alt"></i>
+            <p>Phone charging facilities</p>
+          </div>
+          <div class="spacer"></div>
         </div>
       </div>
     </div>
   </section>
 
   <section class="current-offers">
-    <div class="container">
-      <div class="text-block">
-        <h2 class="text-block__h2">Current offers</h2>
-        <p class="text-block__p">
-          Our offers change all the time so check back regularly, also feel
-          free to leave feedback via the contact form for the kind of offers
-          you would like to see in the future.
-        </p>
-      </div>
-      <div class="offer">
-        <h3 class="offer__h3">£25 Darlington</h3>
-        <div class="offer__text">
+    <div class="content">
+      <div class="flex-row">
+        <div class="text-block">
+          <h2>Current offers</h2>
           <p>
-            Taxi from Catterick garrison to Darlington or Northallerton only
-            £25, thats a saving of around £10 on the normal meter price.
+            Our offers change all the time so check back regularly, also feel
+            free to leave feedback via the contact form for the kind of offers
+            you would like to see in the future.
           </p>
-          <div class="offer__conditions">
-            <span>Offer for 1-3 passengers</span>
-            <span>Phone bookings only</span>
+          <p>To book any of our offers just ring, the price is applied automatically on all phone bookings. Call us for any other quotes, we wont be beaten on price.</p>
+        </div>
+        <div class="offer">
+          <div class="offer__title">
+            <h3>£25</h3>
+            <span>Catterick to Darlington</span>
+          </div>
+            <p class="offer__text">
+              Taxi from Catterick garrison to Darlington or Northallerton only
+              £25, thats a saving of around £10 on the normal meter price.
+            </p>
+            <div class="offer__conditions">
+              <span>Offer for 1-3 passengers</span>
+              <span>Phone bookings only</span>
+            </div>
+          </div>
+        <div class="offer">
+          <div class="offer__title">
+            <h3>£5</h3>
+            <span>Maximum fare in Dl9 postcode</span>
+          </div>
+            <p class="offer__text">
+              Pay a maximum of £5 for any journey within the DL9 postcode. Thats anywhere in the Garrison, Scotton and Colburn.
+            </p>
+            <div class="offer__conditions">
+              <span>Offer for 1-3 passengers</span>
+              <span>Phone bookings only</span>
+            </div>
           </div>
         </div>
+      <div class="spacer"></div>
       </div>
-      <div class="offer">
-        <h3 class="offer__h3">£5 Maximum Fare</h3>
-        <div class="offer__text">
-          <p>
-            Pay a maximum of £5 for any journey within the DL9 postcode
-          </p>
-          <div class="offer__conditions">
-            <span>Offer for 1-3 passengers</span>
-            <span>Phone bookings only</span>
-          </div>
-        </div>
-      </div>
-    </div>
   </section>
 
   <section class="airport-transfers">
-    <div class="container">
-      <picture class="picture">
-        <source srcset="/imgs/airporthero.webp" type="image/webp" />
-        <source srcset="/imgs/airporthero.jpg" type="image/jpg" />
-        <img alt="Picture of an aeroplane taking off" src="/imgs/airporthero.jpg" />
-      </picture>
-      <div class="text-block">
-        <h2 class="text-block__h2">Airport transfers</h2>
-        <p class="text-block__p">
-          We specialise in <a href="/airport">Airport transfers</a> so whether
-          you are travelling for business or going on holiday you can count on
-          our first class service to get you there in comfort and on time. We
-          can take you from Catterick to any UK airport, from Newcastle
-          Airport (NCL) to London Heathrow (LHR) we have some excellent long
-          distance prices. We also have wifi in our taxi to keep you
-          entertained on your journey. For a quote visit our contact page.
-        </p>
+    <div class="content">
+      <div class="flex-row">
+        <div class="picture">
+          <picture>
+            <source srcset="/imgs/airporthero.webp" type="image/webp" />
+            <source srcset="/imgs/airporthero.jpg" type="image/jpg" />
+            <img alt="Picture of an aeroplane taking off" src="/imgs/airporthero.jpg" />
+          </picture>
+        </div>
+        
+        <div class="text-block">
+          <h2 class="text-block__h2">Airport transfers</h2>
+          <p class="text-block__p">
+            We specialise in <a href="/airport">Airport transfers</a> so whether
+            you are travelling for business or going on holiday you can count on
+            our first class service to get you there in comfort and on time. We
+            can take you from Catterick to any UK airport, from Newcastle
+            Airport (NCL) to London Heathrow (LHR) we have some excellent long
+            distance prices. We also have wifi in our taxi to keep you
+            entertained on your journey. For a quote visit our contact page.
+          </p>
+        </div>
       </div>
+      
     </div>
   </section>
 
   <section id="safe-taxi" class="safe-taxi">
-    <div class="container">
-      <picture class="picture">
-        <source srcset="/imgs/screen.webp" type="image/webp" />
-        <source srcset="/imgs/screen.jpg" type="image/jpg" />
-        <img alt="Picture of safety screen" src="/imgs/screen.jpg" />
-      </picture>
-      <div class="text-block">
-        <h2 class="text-block__h2">Travel safe</h2>
-        <p class="text-block__p">
-          As we have a screen fitted to allow for social distancing we are currently limited to a maximum of 3 passengers per journey.
-          Extra measures we have in place to keep customers safe include:
-        </p>
-        <ul class="text-block__ul">
-          <li>Screen fitted between driver and passengers</li>
-          <li>Hand gel for customers</li>
-          <li>Contactless payment available in every taxi</li>
-          <li>Touch points cleaned every journey</li>
-          <li>Car deep cleaned after every shift</li>
-          <li>Face masks available</li>
-        </ul>
+
+    <div class="content">
+      
+      <div class="flex-row">
+        <div class="picture">
+          <picture>
+            <source srcset="/imgs/screen.webp" type="image/webp" />
+            <source srcset="/imgs/screen.jpg" type="image/jpg" />
+            <img alt="Picture of safety screen" src="/imgs/screen.jpg" />
+          </picture>
+        </div>
+        
+        <div class="text-block switch">
+          <h2 class="text-block__h2">Travel safe</h2>
+          <p class="text-block__p">
+            As we have a screen fitted to allow for social distancing we are currently limited to a maximum of 3 passengers per journey.
+            Extra measures we have in place to keep customers safe include:
+          </p>
+          <ul class="text-block__ul">
+            <li>Screen fitted between driver and passengers</li>
+            <li>Hand gel for customers</li>
+            <li>Contactless payment available in every taxi</li>
+            <li>Touch points cleaned every journey</li>
+            <li>Car deep cleaned after every shift</li>
+          </ul>
+        </div>
+
       </div>
+      
+      <div class="content__section">
+        <div class="flex-row">
+      
+          <div class="text-block">
+            <h3>Face masks</h3>
+            <p>
+              As from July 24th, face masks are required to be worn on every journey unless you are exempt. If you require a face mask we can provide you with a brand new disposable mask, just ask the your driver.
+            </p>
+          </div>
+          <div class="text-block">
+            <h3>Any other concerns</h3>
+            <p>We understand that some customers are still worried about travelling so if you have any other concerns feel free to get in touch through our  <a href="/contact">contact page</a> and we will get back to you as soon as we can.</p>
+          </div>
+        </div>
+      </div>
+ 
     </div>
-    <div class="container">
-      <div class="text-block">
-        <h3 class="text-block__h3">Face masks</h3>
-        <p class="text-block__p">
-          As from July 24th, face masks are required to be worn on every journey unless you are exempt. If you require a face mask we can provide you with a brand new disposable mask, just ask the your driver.
-        </p>
-      </div>
-      <div class="text-block">
-        <h3 class="text-block__h3">Any other concerns</h3>
-        <p class="text-block__p">We understand that some customers are still worried about travelling so if you have any other concerns feel free to get in touch through our  <a href="/contact">contact page</a> and we will get back to you as soon as we can.</p>
-      </div>
-    </div>
+  </div>
   </section>
 
   <section class="great-service">
-    <div class="container">
-      <picture class="picture">
-        <source srcset="/imgs/carinterior11.webp" type="image/webp" />
-        <source srcset="/imgs/carinterior11.jpg" type="image/jpg" />
-        <img alt="Picture of our taxi" src="/imgs/googlecover.jpg" />
-      </picture>
+    <div class="content">
+     <div class="flex-row">
+      <div class="picture">
+        <picture class="picture">
+          <source srcset="/imgs/carinterior11.webp" type="image/webp" />
+          <source srcset="/imgs/carinterior11.jpg" type="image/jpg" />
+          <img alt="Picture of our taxi" src="/imgs/googlecover.jpg" />
+        </picture>
+      </div>
+      
       <div class="text-block">
-        <h2 class="text-block__h2">Great service</h2>
-        <p class="text-block__p">
+        <h2>Great service</h2>
+        <p>
           Looking for the premier taxi service in Catterick garrison, Our taxi
           is cleaned and maintained to the highest standards and is strictly
           smoke free so you can be sure to have a relaxing, safe and
           comfortable journey. We also have superfast 4G wifi and phone
           charging facilities for your convenience.
         </p>
-        <p class="text-block__p">
+        <p>
           If you need more information fill out the contact form, or you might
           find what your looking for with our
           <a href="/contact#faq">FAQ page</a>.
         </p>
       </div>
+
+      </div>
     </div>
   </section>
 
   <section class="station-transfers">
-    <div class="container">
-      <picture class="picture">
-        <source srcset="/imgs/stationhero.webp" type="image/webp" />
-        <source srcset="/imgs/stationhero.jpg" type="image/jpg" />
-        <img alt="Picture of Darlington station" src="/imgs/stationhero.jpg" />
-      </picture>
-      <div class="text-block">
-        <h2 class="text-block__h2">Station transfers</h2>
-        <p class="text-block__p">
-          Looking for unbeatable taxi prices on
-          <a href="station">station transfers</a> from Catterick garrison, We
-          currently have a special offer, taxi for 1-4 passengers from
-          Catterick garrison to Darlington station or Northallerton station
-          for the special offer price of £25. This offer is also valid if you
-          need a taxi from Darlington or Northallerton to Catterick.
-        </p>
-        <p class="text-block__p">
-          We would advise booking in advance to guarantee availablity. To book
-          see our <a href="/contact">contact page</a>.
-        </p>
+    <div class="content">
+      <div class="flex-row">
+        <div class="picture">
+          <picture class="picture">
+            <source srcset="/imgs/stationhero.webp" type="image/webp" />
+            <source srcset="/imgs/stationhero.jpg" type="image/jpg" />
+            <img alt="Picture of Darlington station" src="/imgs/stationhero.jpg" />
+          </picture>
+        </div>
+        
+        <div class="text-block">
+          <h2>Station transfers</h2>
+          <p>
+            Looking for unbeatable taxi prices on
+            <a href="station">station transfers</a> from Catterick garrison, We
+            currently have a special offer, taxi for 1-4 passengers from
+            Catterick garrison to Darlington station or Northallerton station
+            for the special offer price of £25. This offer is also valid if you
+            need a taxi from Darlington or Northallerton to Catterick.
+          </p>
+          <p>
+            We would advise booking in advance to guarantee availablity. To book
+            see our <a href="/contact">contact page</a>.
+          </p>
+        </div>
       </div>
+      
     </div>
   </section>
     
