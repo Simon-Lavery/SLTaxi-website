@@ -646,8 +646,8 @@ hr {
 .call-button {
   background-color: #f7b731;
   position: fixed;
-  bottom: 60px;
-  right: 20px;
+  bottom: 100px;
+  right: 23px;
   display: flex;
   justify-content: center;
   align-items: center;
