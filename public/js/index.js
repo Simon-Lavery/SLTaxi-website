@@ -31,23 +31,10 @@ window.onload = () => {
       menuOpen = false;
     }
 
-    // Remove banner on scroll
-    // let banner = document.getElementsByClassName('banner')[0];
-    // if (banner) {
-    //   banner.style.display = 'none';
-    // }
   });
-
-  setTimeout(() => {
-    if (window.outerWidth < 790) {
-      callButton.classList.add('call-button_shrink');
-    }
-
-  }, 3000)
 
 
 }
-
 function closeAlert() {
   document.getElementsByClassName('alert')[0].style.display = "none";
 }
