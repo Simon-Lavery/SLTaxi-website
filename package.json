@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "minify-css": "postcss public/css/main.css > public/css/main.min.css"
+    "sass-compiler": "sass --watch scss:public/css",
+    "minify-css": "postcss public/css/main.css > public/css/main.min.css",
+    "build": "npm run minify-css"
   },
   "author": "Simon Lavery",
   "license": "ISC",
@@ -18,11 +20,11 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "express-session": "^1.15.6",
-    "nodemon": "1.19.4",
     "sitemap": "^2.2.0"
   },
   "devDependencies": {
     "cssnano": "4.1.10",
-    "postcss-cli": "7.1.1"
+    "postcss-cli": "7.1.1",
+    "nodemon": "1.19.4"
   }
 }

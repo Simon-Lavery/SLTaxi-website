@@ -15,7 +15,7 @@ const express = require("express"),
 
 const port = process.env.PORT || 4000;
 const app = express();
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+sgMail.setApiKey(process.env.SENDGRID_API_KEY || "You need a api key here");
 
 const sitemap = sm.createSitemap({
   hostname: "https://sltaxicatterick.co.uk",

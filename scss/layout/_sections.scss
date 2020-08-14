@@ -274,11 +274,16 @@ footer{
  
   .copyright{
     font-size: .9rem;
-  }
-  .copy{
-    display: block;
+    span{
+      display: block;
+    }
+
+    .copy1{
+      padding: 0 0 20px 0;
+    }
   }
 
+  // desktop footer styles
   @media #{$break-m}{
     padding: 60px 0 10px;
     .copy{

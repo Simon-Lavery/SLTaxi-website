@@ -1057,8 +1057,11 @@ footer .privacy a {
 footer .copyright {
   font-size: 0.9rem;
 }
-footer .copy {
+footer .copyright span {
   display: block;
+}
+footer .copyright .copy1 {
+  padding: 0 0 20px 0;
 }
 @media (min-width: 768px) {
   footer {
