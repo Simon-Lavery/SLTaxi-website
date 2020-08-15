@@ -119,27 +119,29 @@
   @extend %theme-teal;
 }
 
-.form{
-  display: flex;
-  flex-direction: column;
-  
-  &__input{
-    margin: 10px 0;
-    padding: 10px;
+.contact-page-grid{
+  @media #{$break-m}{
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 60% 30%;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "intro intro"
+    "form contact-info";
+    
+    .contact-intro{
+      grid-area: intro;
+    }
+    .contact-form{
+      grid-area: form;
+    }
+    .contact-info{
+      grid-area: contact-info;
+    }
   }
-  &__button{
-    background-color: #f7b731;
-    margin: 20px 0;
-    padding: 10px;
-    font-size: 1.2rem;
-    font-weight: bold;
-  }
-  &__checker{
-    display: none;
-  }
+
+   
 }
-
-
 .qa{
   margin: 20px 0;
 }

@@ -1,0 +1,21 @@
+.form{
+  
+  display: flex;
+  flex-direction: column;
+  &__input{
+    margin: 10px 0;
+    padding: 5px;
+  }
+
+  &__checker{
+    display: none;
+  }
+
+  @media #{$break-m}{
+    flex: 1;
+  }
+}
+
+.contact-info{
+  flex: 1;
+}
