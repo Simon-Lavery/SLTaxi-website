@@ -604,6 +604,10 @@ hr {
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+.offer__picture {
+  border-radius: 10px 10px 0 0;
 }
 .offer__title {
   background-color: #4f9d66;
@@ -621,13 +625,20 @@ hr {
   margin: 0;
 }
 .offer__conditions {
-  padding: 10px;
   color: #5e5e5e;
   font-size: 0.7rem;
   font-weight: bold;
 }
 .offer__conditions span {
-  display: block;
+  display: inline-block;
+  width: 70%;
+}
+.offer__conditions .span1 {
+  padding: 10px 0 0;
+  border-top: 2px solid #f7b731;
+}
+.offer__conditions .span2 {
+  padding: 0 0 10px;
 }
 @media (min-width: 768px) {
   .offer {

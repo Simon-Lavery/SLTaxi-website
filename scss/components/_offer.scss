@@ -8,6 +8,10 @@
   border-radius: 10px;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  overflow: hidden;
+  &__picture{
+    border-radius: 10px 10px 0 0;
+  }
 
   &__title{
     background-color: #4f9d66;
@@ -25,14 +29,22 @@
     margin: 0;
   }
   &__conditions{
-    padding: 10px;
     color: lighten($grey, 10%);
     font-size: 0.7rem;
     font-weight: bold;
-
     span{
-      display: block;
+      display: inline-block;
+      width: 70%;
     }
+    .span1{
+      padding: 10px 0 0;
+      border-top: 2px solid $taxi-yellow;
+    }
+    .span2{
+      padding: 0 0 10px;
+    }
+
+    
   }
 
   @media #{$break-m}{
