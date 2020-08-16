@@ -5,34 +5,43 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-html,
+html{
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 62.5%; /* font-size 1em = 10px on default browser settings */
+  font-family: Roboto;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
 body {
   margin: 0;
   max-width: 100%;
   padding: 0;
-  font-size: 18px;
-  line-height: 1.4;
-  font-family: Georgia, serif;
   color: $grey;
   background-color: $primary-light;
+  font-size: 2rem;
+  font-weight: 400;
 }
 
 h1,
 h2,
 h3{
+  color: $primary-dark;
   margin: 1px;
   padding: 0;
 }
 
 h1{
-  font-size: 1.7rem;
+  font-size: $heading-main;
 }
 
 h2{
-  font-size: 1.6rem;
+  font-size: $heading-sub;
 }
 
 h3{
+ font-size: 2.3rem;
  margin: 20px 0 0;
 }
 
@@ -50,7 +59,6 @@ a {
   font-weight: bold;
   color: inherit;
 }
-
 a:visited{
   color: inherit;
 }

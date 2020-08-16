@@ -70,7 +70,7 @@
   @media #{$break-m}{
     .text-block{
       margin: 0;
-      width: 30%;
+      width: 35%;
     }
   }
 }
@@ -98,6 +98,9 @@
   
   ul{
     padding: 0 0 0 20px;
+  }
+  p{
+    width: 90%;
   }
 }
 
@@ -193,7 +196,7 @@
     }
     
     span{
-      font-size: .9rem;
+      font-size: 1.5rem;
       display: inline-block;
     }
   
@@ -236,7 +239,9 @@ footer{
       border-bottom: 2px solid $taxi-yellow;
       box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
       color: $primary-light;
-      font-size: 0.7rem;
+      i{
+        font-size: 2.5rem;
+      }
     }
     
     @media #{$break-m}{
@@ -251,7 +256,7 @@ footer{
         width: 20%;
         text-align: center;
         i{
-          font-size: 1.2rem;
+          font-size: 2rem;
         }
       }
     }
@@ -275,13 +280,13 @@ footer{
   }
  
   .copyright{
-    font-size: .9rem;
+    font-size: 1.8rem;;
     span{
       display: block;
     }
 
     .copy1{
-      padding: 0 0 20px 0;
+      padding: 0 0 10px 0;
     }
   }
 

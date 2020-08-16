@@ -1,3 +1,13 @@
+// fonts
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,700';
+@import 'https://fonts.googleapis.com/css?family=Titillium+Web';
+
+
+// font-sizes
+$x-small: 1.5rem;
+$base: 2rem;
+$heading-main: 3.7rem;
+$heading-sub: 3.2rem;
 // Colors descriptive
 
 $grey: #444;
@@ -33,11 +43,13 @@ $hero-images: (
 // themes
 
 %theme-teal{
-    color: $primary-light;
+    color: rgba(white, 0.9);
     background-color: $primary-dark;
     h1,
     h2,
     h3{
-        color: lighten($primary-light, 10%);
+        color: $primary-light;
     }
+
 }
+
