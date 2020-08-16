@@ -391,7 +391,7 @@ h3 {
 }
 
 h1 {
-  font-size: 3.7rem;
+  font-size: 3.4rem;
 }
 
 h2 {
@@ -675,7 +675,7 @@ hr {
 .call-button {
   background-color: #f7b731;
   position: fixed;
-  bottom: 100px;
+  bottom: 70px;
   right: 23px;
   display: flex;
   justify-content: center;

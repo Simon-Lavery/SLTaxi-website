@@ -2,4 +2,3 @@ node_modules
 .env
 views/partials/google-analytics.ejs
 production-checklist.txt
-views/partials/fb-messenger-plugin.ejs
