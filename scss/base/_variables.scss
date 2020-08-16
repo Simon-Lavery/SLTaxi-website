@@ -40,16 +40,3 @@ $hero-images: (
     "daysout": "/imgs/daysouthero",
 );
 
-// themes
-
-%theme-teal{
-    color: rgba(white, 0.9);
-    background-color: $primary-dark;
-    h1,
-    h2,
-    h3{
-        color: $primary-light;
-    }
-
-}
-

@@ -627,17 +627,6 @@ hr {
   border-radius: 10px 10px 0 0;
   max-width: 100%;
 }
-.offer__title {
-  background-color: #4f9d66;
-  margin: 0;
-  padding: 10px;
-  color: #eceff1;
-  border-radius: 10px 10px 0 0;
-}
-.offer__title h3 {
-  margin: 0;
-  font-size: 1.5rem;
-}
 .offer__text {
   padding: 30px 10px;
   margin: 0;
@@ -646,17 +635,15 @@ hr {
   color: #5e5e5e;
   font-size: 1.5rem;
   font-weight: bold;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 1rem 0;
+  border-top: 2px solid #f7b731;
+  width: 70%;
 }
 .offer__conditions span {
   display: inline-block;
-  width: 70%;
-}
-.offer__conditions .span1 {
-  padding: 10px 0 0;
-  border-top: 2px solid #f7b731;
-}
-.offer__conditions .span2 {
-  padding: 0 0 10px;
+  width: 100%;
 }
 @media (min-width: 768px) {
   .offer {
@@ -985,6 +972,7 @@ nav + div, nav + section {
   }
 }
 .safe-taxi ul {
+  margin: 0;
   padding: 0 0 0 20px;
 }
 .safe-taxi p {
